@@ -28,8 +28,7 @@ In summary, we are expecting to see two consecutive blocks mined more than 2 hou
 The latest block is 752087, which implies there are 752087/162754.79141975117255 = 4.62 such events occurred in the past on average
 
 
-However, based our script, there are 
-
+However, based our script, there are 142 such events.
 
 A possible reason for this is that the hash rate is generally
 increasing over time, and the method by which the difficulty
@@ -42,5 +41,9 @@ of a segment until the end of the segment when the difficulty
 is increased to compensate, and the arrival rate is reduced. 
 (reference [Block arrivals in the Bitcoin blockchain](https://arxiv.org/pdf/1801.07447.pdf))
 
+Other possible reasons:
+
+* We are not considering propagation delay between nodes.
+* Nonhomogeneous poisson process where hash rate is periodic is more appropriate model for this. (reference [Block arrivals in the Bitcoin blockchain](https://arxiv.org/pdf/1801.07447.pdf))
 
 
