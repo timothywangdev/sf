@@ -1,4 +1,4 @@
-# commands
+# Readme
 
 If we assume that (a) the hash rate is constant the whole time, a new block will be mined once every 10 minutes on average (from whitepaper), (b) mining events are independent of each other, (c) Two blocks cannot be mined at the same time
 then we can model it as a Homogeneous Poisson Process with an average rate lambda=6 (blocks/hr)
